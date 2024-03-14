@@ -8,17 +8,17 @@
     <title>GIC</title>
 
     <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}" />
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
       <a href="/">
-        <img src="assets/GIC Logo.jpeg" alt="GIC logo" />
+        <img src="{{ url_for('static',filename='assets/GIC Logo.jpeg') }}" alt="GIC logo" />
       </a>
       <a href="/">Home</a>
-      <a href="information.html">Information</a>
-      <a href="dataCollection.html">Data Collection</a>
+      <a href="/information">Information</a>
+      <a href="/dataCollection">Data Collection</a>
     </nav>
 
     <!-- Main Content -->
@@ -33,7 +33,7 @@
         your success and the success of your fellow students.
       </p>
       <div>
-        <a class="callToAction" href="information.html">Get Started</a>
+        <a class="callToAction" href="/information">Get Started</a>
       </div>
     </div>
     <footer>
