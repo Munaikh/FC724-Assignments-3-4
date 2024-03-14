@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the page -->
+    <title>Data Collection</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <a href="/">
+        <img src="assets/GIC Logo.jpeg" alt="GIC logo" />
+      </a>
+      <a href="/">Home</a>
+      <a href="information.html">Information</a>
+      <a href="dataCollection.html">Data Collection</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="mainContent">
+      <h1>Student Progress Questionnaire</h1>
+      <p>
+        This brief assessment is designed to help GIC understand your learning
+        experience and identify areas where we can further support your success.
+        Your honest feedback is crucial in this process. Please take your time,
+        answer truthfully, and share your thoughts openly. Your opinions and
+        suggestions will be used to improve teaching strategies, resources, and
+        overall student support at GIC.
+      </p>
+
+      <!-- Section 1  Student Data-->
+      <section class="studentData">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="student_number">Student Number:</label>
+        <input
+          type="text"
+          id="student_number"
+          name="student_number"
+          required
+        /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+      </section>
+
+      <!-- Section 2 Course-Related Questions -->
+      <section class="courseQuestions">
+        <h2>Course-Related Questions</h2>
+        <p>What is your current GPA?</p>
+        <input type="number" id="gpa" name="gpa" required /><br /><br />
+
+        <p>How satisfied are you with the quality of teaching at GIC?</p>
+        <div class="radioGroup">
+          <input
+            type="radio"
+            id="satisfied"
+            name="satisfaction"
+            value="satisfied"
+          />
+          <label for="satisfied">Satisfied</label>
+
+          <input
+            type="radio"
+            id="neutral"
+            name="satisfaction"
+            value="neutral"
+          />
+          <label for="neutral">Neutral</label>
+
+          <input
+            type="radio"
+            id="unsatisfied"
+            name="satisfaction"
+            value="unsatisfied"
+          />
+          <label for="unsatisfied">Unsatisfied</label>
+        </div>
+
+        <p>
+          What are the areas where you think GIC can improve its teaching
+          methods?
+        </p>
+        <textarea id="improvement" name="improvement" required></textarea
+        ><br /><br />
+      </section>
+
+      <!-- > Section 3 Overall Experience -->
+      <section>
+        <h2>Overall Experience</h2>
+        <p>How would you rate your overall experience at GIC?</p>
+        <div class="radioGroup">
+          <input
+            type="radio"
+            id="excellent"
+            name="experience"
+            value="excellent"
+          />
+          <label for="excellent">Excellent</label>
+          <input type="radio" id="good" name="experience" value="good" />
+          <label for="good">Good</label>
+          <input type="radio" id="average" name="experience" value="average" />
+          <label for="average">Average</label>
+          <input type="radio" id="poor" name="experience" value="poor" />
+          <label for="poor">Poor</label><br /><br />
+        </div>
+        <p>
+          What are the areas where you think GIC can improve its overall
+          academic experience?
+        </p>
+        <textarea
+          id="academic_improvement"
+          name="academic_improvement"
+          required
+        ></textarea
+        ><br /><br />
+      </section>
+
+      <!-- Submit Button -->
+      <div class="submitButon">
+        <input type="submit" value="Submit" />
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Glasgow International College</p>
+    </footer>
+  </body>
+</html>

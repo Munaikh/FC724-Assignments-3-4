@@ -1,0 +1,245 @@
+html {
+  /* Styles for the whole website */
+
+  /* Provides a base font size and family */
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Removes all padding and margin from all the edges */
+  padding: 0px;
+  margin: 0px;
+
+  /* Text color for the whole website */
+  color: #333;
+}
+
+/* Styles for the footer */
+footer {
+  /* Styles the footer */
+
+  /* Sets the posotion to be at the bottom of the body */
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+
+  /* Align the text to the center */
+  text-align: center;
+
+  /* Text color for the footer */
+  color: #333;
+}
+
+/* Styles for the headings, paragraphs, and links */
+/* making the font size relevant to the root */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p,
+ul {
+  font-size: 1.5rem;
+}
+
+a,
+label {
+  font-size: 1.2rem;
+}
+
+/* Styles for the navigation bar */
+.navbar {
+  /* Align the text to the left */
+  text-align: left;
+  margin: 20px;
+
+  /* provides a symetric vertical padding  */
+  padding: 15px 0px;
+}
+
+.navbar img {
+  /* Styles the image element located in the navigation bar */
+
+  /* Image dimentions */
+  width: 50px;
+  height: 50px;
+
+  /* makes the image centered with the navigation links */
+  margin: -20px 0px;
+
+  /* Provides border radius */
+  border-radius: 12px;
+}
+
+.navbar a {
+  /* Styles the navigation links */
+
+  /* Text color */
+  color: #333;
+
+  /* Provides padding to the links */
+  padding: 5px 10px;
+
+  /* Removes the underline from the links */
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  /* Styles the navigation links when hovered */
+
+  /* Makes the links in bold */
+  font-weight: bold;
+}
+
+/* Styles for the main content */
+.mainContent {
+  /* Styles the main content where there are brief info*/
+
+  /* Provides padding and margin to the main content */
+  margin: 12px;
+  padding: 12px;
+
+  /* Provides border radius and light shadow */
+  border-radius: 12px;
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); */
+}
+
+.mainContent li {
+  /* Styles the list items inside the main content */
+
+  /* Provides padding to the list items */
+  margin-bottom: 16px;
+}
+
+/* Styles the Call To Action Button */
+.mainContent > div {
+  /* Adding margin to the top of the button */
+  margin-top: 40px;
+
+  /* Styles the divs (Action Button) inside the main content */
+  text-align: left;
+}
+
+.callToAction {
+  /* Styles the Call To Action Button itself*/
+
+  /* Provides padding to the button */
+  padding: 10px 24px;
+
+  /* Text color */
+  color: white;
+
+  /* Removes the underline from the links */
+  text-decoration: none;
+
+  /* Provides border radius */
+  border-radius: 8px;
+
+  /* Background color for the button */
+  background-color: #094497;
+}
+
+.callToAction:hover {
+  /* Styles the Call To Action Button when hovered */
+
+  /* Background color for the button */
+  background-color: #0d5d9b;
+}
+
+/* Styles The Data Collection Page */
+.studentData label {
+  /* Styles the labels for the input fields */
+
+  /* makes the labels have some margin at the bottom */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.studentData input,
+.courseQuestions input[type="text"],
+.courseQuestions input[type="number"] {
+  /* Styles the input fields */
+
+  /* Makes the inout fields takes the full space */
+  width: 100%;
+
+  /* Provides padding to the input fields */
+  padding: 10px;
+
+  /* Provides border radius */
+  border-radius: 8px;
+
+  /* Without it the input field ignores the right padding */
+  box-sizing: border-box;
+
+  /* Provides border color */
+  border: 1px solid #ccc;
+}
+
+textarea {
+  /* Styles the textarea */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Makes the textarea takes the full space */
+  width: 100%;
+  height: 100px;
+
+  /* Provides padding to the input fields */
+  padding: 10px;
+
+  /* Provides border radius */
+  border-radius: 8px;
+
+  /* Without it the input field ignores the right padding */
+  box-sizing: border-box;
+
+  /* Provides border color */
+  border: 1px solid #ccc;
+}
+
+.radioGroup input,
+.radioGroup label {
+  /* Styles the radio buttons and their labels */
+
+  /* Makes the cursor turn into a pointer when hovering on the radio button or the label */
+
+  cursor: pointer;
+}
+
+/* Submit Button */
+.submitButon input[type="submit"] {
+  /* Styles the submit button */
+
+  /* Provides padding to the button */
+  padding: 10px 24px;
+
+  /* Background color for the button */
+  background-color: #094497;
+
+  /* Text color */
+  color: white;
+
+  /* Removes the black border from the button */
+  border: none;
+
+  /* Provides border radius */
+  border-radius: 8px;
+
+  /* Makes the cursor turn into a pointer when hovering on the button */
+  cursor: pointer;
+}
+
+.submitButon input[type="submit"]:hover {
+  /* Styles the submit button when hovered */
+
+  /* Background color for the button */
+  background-color: #0d5d9b;
+}
+
+input:focus {
+  /* Styles the input fields when focused */
+
+  /* Provides border color */
+  border-color: #0d5d9b;
+}
