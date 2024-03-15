@@ -8,6 +8,7 @@
     <title>Data Collection</title>
 
     <!-- Link to external stylesheet -->
+    <!-- Using url_for for importing the css from the static folder -->
     <link
       rel="stylesheet"
       href="{{ url_for('static',filename='styles/styles.css') }}"
@@ -17,11 +18,14 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
       <a href="/">
+        <!-- Using url_for for importing the image from the static folder -->
         <img
           src="{{ url_for('static',filename='assets/GIC Logo.jpeg') }}"
           alt="GIC logo"
         />
       </a>
+
+      <!-- replacing the file path to just the route name -->
       <a href="/">Home</a>
       <a href="/information">Information</a>
       <a href="/dataCollection">Data Collection</a>
@@ -39,6 +43,8 @@
         overall student support at GIC.
       </p>
 
+      <!-- defining the form element and adding the action that would call the function on submit -->
+      <!-- using the Flask WTF elements I have defined in form.py instead of the previous input and label elements -->
       <form method="POST" action="{{ url_for('data_collection') }}">
         <!-- {{ form.csrf_token }} -->
         <!-- Section 1  Student Data-->

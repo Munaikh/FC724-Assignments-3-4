@@ -8,14 +8,21 @@
     <title>information</title>
 
     <!-- Link to external stylesheet -->
+    <!-- Using url_for for importing the css from the static folder -->
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}" />
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
       <a href="/">
-        <img src="{{ url_for('static',filename='assets/GIC Logo.jpeg') }}" alt="GIC logo" />
+        <!-- Using url_for for importing the image from the static folder -->
+        <img
+          src="{{ url_for('static',filename='assets/GIC Logo.jpeg') }}"
+          alt="GIC logo"
+        />
       </a>
+
+      <!-- replacing the file path to just the route name -->
       <a href="/">Home</a>
       <a href="/information">Information</a>
       <a href="/dataCollection">Data Collection</a>
