@@ -30,12 +30,11 @@ def data_collection():
         overall_experience = form.overall_experience.data
         experience_improvement_areas = form.experience_improvement_areas.data
 
-        # Do something with the form data, e.g., save to a database
-        print(name, student_number, email, gpa)
-        print(teaching_satisfaction)
-        print(teaching_improvement_areas)
-        print(overall_experience)
-        print(experience_improvement_areas)
+        try:
+            with open('data.txt', 'a') as file:
+                file.write(f'{name}, {student_number}, {email}, {gpa}, {teaching_satisfaction}, {teaching_improvement_areas}, {overall_experience}, {experience_improvement_areas}\n')
+        except Exception as e:
+            print(e)
 
         flash('Thank you for your feedback!', 'success')
         return redirect(url_for('data_collection'))
