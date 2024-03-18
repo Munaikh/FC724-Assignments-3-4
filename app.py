@@ -5,7 +5,9 @@ from form import Questionnaire
 # Creating an instance of the Flask class
 app = Flask(__name__)
 
-# Setting a random secret key for the application (required for form submission)
+# Setting a random secret key for the application (required for displaying the form)
+# without this, the form will not be displayed and an error will be thrown
+# RuntimeError: A secret key is required to use CSRF.
 app.config["SECRET_KEY"] = (
     "e9e8e8ab1b6ad27c85e0636305cac3c3cfd96aba4438dcf0fe3c1ed4061a7b2f"
 )
