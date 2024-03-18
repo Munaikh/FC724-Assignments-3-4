@@ -23,7 +23,7 @@ class Questionnaire(FlaskForm):
     # Required GPA field
     gpa = DecimalField("What is your current GPA?", validators=[DataRequired()])
 
-    # Required teaching satisfaction field
+    # Required teaching satisfaction Radio Buttons (MCQ) field
     teaching_satisfaction = RadioField(
         "How satisfied are you with the quality of teaching at GIC?",
         choices=[
@@ -34,12 +34,12 @@ class Questionnaire(FlaskForm):
         validators=[DataRequired()],
     )
 
-    # Teaching improvement areas field
+    # Teaching improvement areas  long answer field
     teaching_improvement_areas = TextAreaField(
         "What are the areas where you think GIC can improve its teaching methods?"
     )
 
-    # Required overall experience field
+    # Required overall experience Radio Buttons (MCQ) field
     overall_experience = RadioField(
         "How would you rate your overall experience at GIC?",
         choices=[
@@ -51,7 +51,7 @@ class Questionnaire(FlaskForm):
         validators=[DataRequired()],
     )
 
-    # Experience improvement areas field
+    # Experience improvement areas long answer field
     experience_improvement_areas = TextAreaField(
         "What are the areas where you think GIC can improve its overall academic experience?"
     )
