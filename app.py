@@ -61,6 +61,7 @@ def data_collection():
         except Exception as e:
             print(e)
 
+        # Redirecting the user to the home page after form submission
         return redirect(url_for("home"))
     return render_template("dataCollection.html", form=form)
 
