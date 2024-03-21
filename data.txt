@@ -1,1 +1,1 @@
-Abdullah AlMunaikh, P405835, amunaikh@gmail.com, 98, unsatisfied, They should get better teachers and content, poor, Include more demos when teaching, don't depend on theoretical examples.
+{'name': 'Abdullah', 'student_number': 'P405835', 'email': 'amunaikh@gmail.com', 'gpa': Decimal('232'), 'teaching_satisfaction': 'satisfied', 'teaching_improvement_areas': 'sfgb', 'overall_experience': 'excellent', 'experience_improvement_areas': 'sfbvdfbfesdb', 'submit': True, 'csrf_token': None}

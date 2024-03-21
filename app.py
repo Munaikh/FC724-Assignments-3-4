@@ -41,22 +41,12 @@ def data_collection():
 
     # Checking if the form has been submitted
     if form.is_submitted():
-        # creating variables to contain the data from the form
-        name = form.name.data
-        student_number = form.student_number.data
-        email = form.email.data
-        gpa = form.gpa.data
-        teaching_satisfaction = form.teaching_satisfaction.data
-        teaching_improvement_areas = form.teaching_improvement_areas.data
-        overall_experience = form.overall_experience.data
-        experience_improvement_areas = form.experience_improvement_areas.data
-
         # Writing the data to a file
         try:
             with open("data.txt", "a") as file:
                 # Writing the data to the file
                 file.write(
-                    f"{name}, {student_number}, {email}, {gpa}, {teaching_satisfaction}, {teaching_improvement_areas}, {overall_experience}, {experience_improvement_areas}\n"
+                    str(form.data)
                 )
 
         # Handling exceptions
@@ -65,7 +55,7 @@ def data_collection():
 
         # Redirecting the user to the home page after form submission
         return redirect(url_for("home"))
-    return render_template("dataCollection.html", form=form)
+    return render_template("dataCollection.html", form=form) # passing the form object to the tampalet
 
 
 # Running the application (Server)
